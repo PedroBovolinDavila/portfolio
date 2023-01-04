@@ -7,6 +7,9 @@ export const theme = extendTheme({
   },
   styles: {
     global: {
+      '*': {
+        boxSizing: 'border-box',
+      },
       body: {
         bg: 'gray.900',
         color: 'gray.50',

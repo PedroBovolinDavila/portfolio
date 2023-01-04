@@ -1,5 +1,4 @@
 import {
-  Flex,
   Text,
   Icon,
   IconButton,
@@ -8,6 +7,7 @@ import {
 } from '@chakra-ui/react'
 import { List } from 'phosphor-react'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
+import { Section } from '../Section'
 import { MobileMenu } from './MobileMenu'
 import { WebMenu } from './WebMenu'
 
@@ -17,18 +17,15 @@ export function Navbar() {
   const scrollPosition = useScrollPosition()
 
   return (
-    <Flex
-      w="100%"
-      maxW={1480}
-      mx="auto"
-      p="6"
+    <Section
+      h="20"
       align="center"
       justify="space-between"
       zIndex={3}
       position="sticky"
       bg={scrollPosition > 0 ? 'gray.900' : 'transparent'}
       top={0}
-      as="header"
+      isNavbar
     >
       <Text fontWeight="bold" fontSize="3xl" as="h1">
         Pedro D
@@ -54,6 +51,6 @@ export function Navbar() {
         aria-label="Abrir menu de navegação"
         onClick={onToggle}
       />
-    </Flex>
+    </Section>
   )
 }

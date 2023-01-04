@@ -5,6 +5,8 @@ import { TextHighlight } from '../Hero/TextHighlight'
 import { ProjectCard } from './ProjectCard'
 
 import projects from '../../utils/projects'
+import { Section } from '../Section'
+import cirlceBackground from '../../assets/cirlceBackground.svg'
 
 export function Projects() {
   const [project, setProject] = useState(projects[0])
@@ -22,15 +24,13 @@ export function Projects() {
   }
 
   return (
-    <Flex
+    <Section
       id="projects"
-      h="100vh"
       flexDir="column"
       align="center"
       justify="center"
       gap="24"
-      mt="24"
-      pb="8"
+      bgImage={cirlceBackground}
     >
       <Flex gap="16" align="center" flexDir={['column', 'column', 'row']}>
         <Flex flexDir="column" gap="8" textAlign={['center', 'left']}>
@@ -79,6 +79,6 @@ export function Projects() {
           <ProjectCard project={project} />
         </Flex>
       </Flex>
-    </Flex>
+    </Section>
   )
 }

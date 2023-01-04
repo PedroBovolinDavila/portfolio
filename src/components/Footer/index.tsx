@@ -1,15 +1,16 @@
-import { Flex, Text, useMediaQuery } from '@chakra-ui/react'
+import { Text, useMediaQuery } from '@chakra-ui/react'
+import bottomWave from '../../assets/bottomWave.svg'
+import { Section } from '../Section'
 
 export function Footer() {
   const [isWebScreen] = useMediaQuery('(min-width: 30em)')
 
   return (
-    <Flex
-      w="100%"
-      maxW={1480}
-      mx="auto"
+    <Section
+      bgImage={bottomWave}
       p="8"
       pb={['24', '24', '8']}
+      mb={['16', 0]}
       color="gray.300"
       align="center"
       justify="space-between"
@@ -28,6 +29,6 @@ export function Footer() {
       <Text color="gray.300" fontSize={['sm', 'md']}>
         &copy; 2023 {isWebScreen && '- Todos direitos reservados'}
       </Text>
-    </Flex>
+    </Section>
   )
 }

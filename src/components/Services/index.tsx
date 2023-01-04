@@ -5,21 +5,50 @@ import {
   EnvelopeSimple,
   GlobeHemisphereWest,
 } from 'phosphor-react'
+import { Section } from '../Section'
 import { ServiceCard } from './ServiceCard'
+
+import topWave from '../../assets/topWave.svg'
 
 export function Services() {
   return (
-    <Flex
+    <Section
       id="services"
-      h="100vh"
       flexDir="column"
       align="center"
       justify="center"
       gap="24"
-      mt="16"
-      pb="8"
+      bgImage={topWave}
+      topImage
     >
-      <Flex gap="16" align="center" flexDir={['column', 'column', 'row']}>
+      <Flex
+        gap="16"
+        align="center"
+        flexDir={['column-reverse', 'column-reverse', 'row']}
+      >
+        <Flex
+          flexDir={['column', 'column', 'row']}
+          gap="4"
+          w={['100%', '100%', 'auto']}
+        >
+          <ServiceCard
+            icon={AndroidLogo}
+            title="Aplicativos de celular"
+            description="Aplicativo feito em React-Native para Android e IOS"
+          />
+
+          <ServiceCard
+            icon={GlobeHemisphereWest}
+            title="Sites responsivos"
+            description="Sistemas, portfolios, sites para empresa, landing pages"
+          />
+
+          <ServiceCard
+            icon={Database}
+            title="Backend completo"
+            description="Backend para seus apps com tudo que você precisar"
+          />
+        </Flex>
         <Flex flexDir="column" gap="8" textAlign={['center', 'left']}>
           <Flex gap="1" flexDir="column">
             <Heading
@@ -46,30 +75,7 @@ export function Services() {
             Entre em contato
           </Button>
         </Flex>
-        <Flex
-          flexDir={['column', 'column', 'row']}
-          gap="4"
-          w={['100%', '100%', 'auto']}
-        >
-          <ServiceCard
-            icon={AndroidLogo}
-            title="Aplicativos de celular"
-            description="Aplicativo feito em React-Native para Android e IOS"
-          />
-
-          <ServiceCard
-            icon={GlobeHemisphereWest}
-            title="Sites responsivos"
-            description="Sistemas, portfolios, sites para empresa, landing pages"
-          />
-
-          <ServiceCard
-            icon={Database}
-            title="Backend completo"
-            description="Backend para seus apps com tudo que você precisar"
-          />
-        </Flex>
       </Flex>
-    </Flex>
+    </Section>
   )
 }

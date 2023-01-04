@@ -1,18 +1,18 @@
 import { Button, Flex, Heading, Text, Icon, Textarea } from '@chakra-ui/react'
 import { EnvelopeSimple, PaperPlaneRight } from 'phosphor-react'
+import { Section } from '../Section'
 import { ContactInput } from './ContactInput'
 
 export function Contact() {
   return (
-    <Flex
+    <Section
       id="contact"
-      h="100vh"
       flexDir="column"
       align="center"
       justify="center"
       gap="24"
-      mt="16"
-      pb="8"
+      noSpacing
+      mb="15rem"
     >
       <Flex gap="16" align="center" flexDir={['column', 'column', 'row']}>
         <Flex flexDir="column" gap="8" textAlign={['center', 'left']}>
@@ -92,6 +92,6 @@ export function Contact() {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
+    </Section>
   )
 }

@@ -10,6 +10,9 @@ import typescriptLogo from '../../assets/typescript-logo.svg'
 
 import { useState } from 'react'
 import { TechDescription } from './TechDescription'
+import { Section } from '../Section'
+
+import bottomWave from '../../assets/bottomWave.svg'
 
 export type SelectedTech =
   | 'react'
@@ -29,19 +32,19 @@ export function Techs() {
   }
 
   return (
-    <Flex
+    <Section
       id="techs"
-      h="100vh"
       flexDir="column"
       align="center"
       justify="center"
       gap="24"
+      bgImage={bottomWave}
     >
       <Flex
         display="flex"
         gap="16"
         alignItems="center"
-        flexDir={['column', 'row']}
+        flexDir={['column', 'column', 'row']}
       >
         <Flex
           flexDir="column"
@@ -97,6 +100,6 @@ export function Techs() {
           onClick={() => handleSelectTech('prisma')}
         />
       </Flex>
-    </Flex>
+    </Section>
   )
 }
