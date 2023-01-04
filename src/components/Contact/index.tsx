@@ -22,10 +22,11 @@ export function Contact() {
               bgClip="text"
               fontWeight="bold"
               fontSize="5xl"
+              as="h3"
             >
               Contato
             </Heading>
-            <Text fontSize="lg" color="gray.200">
+            <Text fontSize="lg" color="gray.300">
               Entre em contato comigo preenchendo o formulario ou clicando no
               botão abaixo
             </Text>
@@ -74,11 +75,7 @@ export function Contact() {
               _hover={{
                 bg: 'gray.800',
               }}
-              _focus={{
-                bg: 'gray.800',
-                borderWidth: 1,
-                borderColor: 'pink.500',
-              }}
+              focusBorderColor="pink.500"
               name="message"
               placeholder="Sua mensagem/proposta"
               height="90px"

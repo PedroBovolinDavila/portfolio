@@ -13,8 +13,9 @@ export function Footer() {
       color="gray.300"
       align="center"
       justify="space-between"
+      as="footer"
     >
-      <Text fontWeight="bold" fontSize={['xl', '2xl', '3xl']}>
+      <Text fontWeight="bold" fontSize={['xl', '2xl', '3xl']} as="h4">
         Pedro D
         <Text as="span" color="pink.500">
           &apos;

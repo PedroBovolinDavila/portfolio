@@ -1,4 +1,13 @@
-export default [
+interface Project {
+  title: string
+  description: string
+  functions: string[]
+  techs: string[]
+  githubUrl: string | undefined
+  websiteUrl: string | undefined
+}
+
+const projects: Project[] = [
   {
     title: 'GymApp',
     description:
@@ -44,4 +53,15 @@ export default [
     githubUrl: 'https://github.com/PedroBovolinDavila/ApiComercio',
     websiteUrl: undefined,
   },
+  {
+    title: 'Portifólio',
+    description:
+      'Meu portifólio pessoal, esse projeto é esse site que você esta agora!',
+    functions: ['Divulgar', 'Mostrar qualidades'],
+    techs: ['React', 'Vite', 'ChakraUI'],
+    githubUrl: 'https://github.com/PedroBovolinDavila/portfolio',
+    websiteUrl: 'https://pedrodavila.vercel.app',
+  },
 ]
+
+export default projects

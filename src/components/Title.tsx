@@ -12,6 +12,7 @@ export function Title({ children, fontSize }: TitleProps) {
       fontSize={fontSize} // 5Xl
       fontWeight="bold"
       pos="relative"
+      as="strong"
       _before={{
         content: '""',
         pos: 'absolute',

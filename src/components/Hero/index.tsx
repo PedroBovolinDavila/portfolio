@@ -33,6 +33,7 @@ export function Hero() {
           gap="1"
           color="gray.300"
           alignSelf={['center', 'center', 'flex-start']}
+          href="#techs"
         >
           <Icon as={ArrowDown} />
           desça para ver meus projetos

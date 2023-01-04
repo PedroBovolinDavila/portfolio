@@ -7,7 +7,7 @@ interface ProjectFunctionProps {
 
 export function ProjectFunction({ title }: ProjectFunctionProps) {
   return (
-    <Flex gap="1" align="center" fontSize="md">
+    <Flex gap="1" align="center" fontSize="md" as="span">
       <Icon as={CaretCircleRight} fontSize="lg" />
       {title}
     </Flex>

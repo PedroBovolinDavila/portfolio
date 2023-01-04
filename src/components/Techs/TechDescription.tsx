@@ -48,7 +48,14 @@ export function TechDescription({
           }}
         />
 
-        <Text fontSize="3xl" fontWeight="bold" color="white" mr="auto" mb="1">
+        <Text
+          fontSize="3xl"
+          fontWeight="bold"
+          color="white"
+          mr="auto"
+          mb="1"
+          as="h3"
+        >
           {techsDescriptions[activeTech]?.title}
         </Text>
         <Text fontSize="lg">{techsDescriptions[activeTech]?.description}</Text>

@@ -8,6 +8,7 @@ export function WebMenu() {
       alignItems="center"
       color="gray.300"
       display={['none', 'none', 'flex']}
+      as="nav"
     >
       <Link href="#home">Home</Link>
       <Link href="#techs">Techs</Link>

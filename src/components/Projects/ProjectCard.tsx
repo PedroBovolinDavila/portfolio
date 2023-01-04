@@ -28,10 +28,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <Flex gap="4" flexDir="column">
         <Flex flexDir="column" gap="1">
           <Heading fontSize={['2xl', '3xl']}>{project.title}</Heading>
-          <Text fontSize="lg">{project.description}</Text>
+          <Text fontSize="lg" as="h4">
+            {project.description}
+          </Text>
         </Flex>
         <Flex flexDir="column" gap={1}>
-          <Text fontSize={['xl', '2xl']} fontWeight="bold">
+          <Text fontSize={['xl', '2xl']} fontWeight="bold" as="strong">
             Funções
           </Text>
           <Flex flexWrap="wrap" gap="4">
@@ -41,7 +43,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </Flex>
         </Flex>
         <Flex flexDir="column" gap={1}>
-          <Text fontSize={['xl', '2xl']} fontWeight="bold">
+          <Text fontSize={['xl', '2xl']} fontWeight="bold" as="strong">
             Tecnologias ultilizadas
           </Text>
           <Flex flexWrap="wrap" gap="4">

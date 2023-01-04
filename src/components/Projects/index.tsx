@@ -40,10 +40,11 @@ export function Projects() {
               bgClip="text"
               fontWeight="bold"
               fontSize="5xl"
+              as="h2"
             >
               Projetos
             </Heading>
-            <Text fontSize="lg" color="gray.200">
+            <Text fontSize="lg" color="gray.300">
               Veja meus principais projetos, ou clique no botão abaixo para
               visualizar todos os projetos no{' '}
               <TextHighlight>GitHub</TextHighlight>

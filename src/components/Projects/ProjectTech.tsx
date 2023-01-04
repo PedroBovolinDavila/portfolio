@@ -7,7 +7,7 @@ interface ProjectTechProps {
 
 export function ProjectTech({ title }: ProjectTechProps) {
   return (
-    <Flex gap="1" align="center" fontSize="md">
+    <Flex gap="1" align="center" fontSize="md" as="span">
       <Icon as={Code} fontSize="lg" />
       {title}
     </Flex>

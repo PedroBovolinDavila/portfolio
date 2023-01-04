@@ -54,10 +54,11 @@ export function Techs() {
             bgClip="text"
             fontWeight="bold"
             fontSize="5xl"
+            as="h2"
           >
             Tecnologias
           </Heading>
-          <Text fontSize="lg" color="gray.200">
+          <Text fontSize="lg" color="gray.300">
             Confira as principais tecnologias que uso em meus projetos
           </Text>
         </Flex>
@@ -70,7 +71,7 @@ export function Techs() {
               setSelectedTech={setSelectedTech}
             />
           ) : (
-            <Text color="gray.400">
+            <Text color="gray.400" as="span">
               Clique nas tecnolgias para ver detalhes
             </Text>
           )}

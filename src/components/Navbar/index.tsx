@@ -28,8 +28,9 @@ export function Navbar() {
       position="sticky"
       bg={scrollPosition > 0 ? 'gray.900' : 'transparent'}
       top={0}
+      as="header"
     >
-      <Text fontWeight="bold" fontSize="3xl">
+      <Text fontWeight="bold" fontSize="3xl" as="h1">
         Pedro D
         <Text as="span" color="pink.500">
           &apos;

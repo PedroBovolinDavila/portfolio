@@ -22,7 +22,7 @@ export function ServiceCard({ icon, title, description }: ServiceCardProps) {
       flexDir="column"
     >
       <Icon as={icon} fontSize="4xl" />
-      <Text fontWeight="medium" fontSize="lg">
+      <Text fontWeight="medium" fontSize="lg" as="h3">
         {title}
       </Text>
       <Flex

@@ -23,6 +23,7 @@ export function MobileMenu({ isOpen, onToggle }: MobileMenuProps) {
         fontSize="2xl"
         gap="6"
         fontWeight="bold"
+        as="nav"
       >
         <Link href="#home">Home</Link>
         <Link href="#techs">Techs</Link>

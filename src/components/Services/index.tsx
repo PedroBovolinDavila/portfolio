@@ -27,10 +27,11 @@ export function Services() {
               bgClip="text"
               fontWeight="bold"
               fontSize="5xl"
+              as="h2"
             >
               Serviços
             </Heading>
-            <Text fontSize="lg" color="gray.200">
+            <Text fontSize="lg" color="gray.300">
               Serviços desponiveis para contratar
             </Text>
           </Flex>

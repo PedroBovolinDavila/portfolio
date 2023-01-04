@@ -1,4 +1,4 @@
-import { Box, Flex, Image, useMediaQuery } from '@chakra-ui/react'
+import { Flex, Image, useMediaQuery } from '@chakra-ui/react'
 import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
 import { SocialMediaBox } from './components/SocialMediaBox'
@@ -14,6 +14,7 @@ import { Services } from './components/Services'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Section } from './components/Section'
 
 export function App() {
   const [isWebScreen] = useMediaQuery('(min-width: 48em)')
@@ -45,73 +46,26 @@ export function App() {
         flexDir="column"
         zIndex={1}
         gap="32"
+        as="main"
       >
         <SocialMediaBox />
         <Hero />
-        <Box pos="relative">
-          {isWebScreen && (
-            <Image
-              src={techBackgroundSvg}
-              alt=""
-              pos="absolute"
-              top="0"
-              left="0"
-              zIndex={0}
-              width="100vw"
-              height="100vh"
-              opacity={0.2}
-            />
-          )}
+
+        <Section bgImage={techBackgroundSvg}>
           <Techs />
-        </Box>
-        <Box pos="relative">
-          {isWebScreen && (
-            <Image
-              src={servicesBackgroundSvg}
-              alt=""
-              pos="absolute"
-              top="0"
-              left="0"
-              zIndex={0}
-              width="100vw"
-              height="100vh"
-              opacity={0.2}
-            />
-          )}
+        </Section>
+
+        <Section bgImage={servicesBackgroundSvg}>
           <Services />
-        </Box>
-        <Box pos="relative">
-          {isWebScreen && (
-            <Image
-              src={projectsBackgroundSvg}
-              alt=""
-              pos="absolute"
-              top="0"
-              left="0"
-              zIndex={0}
-              width="100vw"
-              height="100vh"
-              opacity={0.2}
-            />
-          )}
+        </Section>
+
+        <Section bgImage={projectsBackgroundSvg}>
           <Projects />
-        </Box>
-        <Box pos="relative">
-          {isWebScreen && (
-            <Image
-              src={contactBackgroundSvg}
-              alt=""
-              pos="absolute"
-              top="0"
-              left="0"
-              zIndex={0}
-              width="100vw"
-              height="100vh"
-              opacity={0.2}
-            />
-          )}
+        </Section>
+
+        <Section bgImage={contactBackgroundSvg}>
           <Contact />
-        </Box>
+        </Section>
       </Flex>
 
       <Footer />

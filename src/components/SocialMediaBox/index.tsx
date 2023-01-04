@@ -39,6 +39,7 @@ export function SocialMediaBox() {
         borderTopRightRadius={['lg', 'lg', 'none']}
         borderWidth={1}
         borderColor="pink.500"
+        as="aside"
       >
         <SocialMediaButton
           icon={InstagramLogo}
