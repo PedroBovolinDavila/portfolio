@@ -9,7 +9,7 @@ import { TextHighlight } from './TextHighlight'
 
 export function Hero() {
   const today = new Date()
-  const birthday = new Date('2003-10-20') // your date of birth
+  const birthday = new Date('2007-06-16')
   const age = differenceInYears(today, birthday)
 
   return (
