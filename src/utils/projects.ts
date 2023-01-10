@@ -54,6 +54,20 @@ const projects: Project[] = [
     websiteUrl: undefined,
   },
   {
+    title: 'IgCall',
+    description:
+      'Site para facilitar o agendamento de reuniões ultilizando a api do Google Calendar. Sempre que você marca uma reunião no site ela automaticamente é adicionada ao Google Calendar juntamente com um link do Google Meet criado automaticamente',
+    functions: [
+      'Marcar reunião',
+      'Criar usuário',
+      'Integração com a api do Google',
+      'Calendário',
+    ],
+    techs: ['Next', 'Prisma', 'Typescript', 'Mysql', 'NextAuth', 'Google Api'],
+    githubUrl: 'https://github.com/PedroBovolinDavila/igcall',
+    websiteUrl: 'https://ig-call.vercel.app',
+  },
+  {
     title: 'Portifólio',
     description:
       'Meu portifólio pessoal, esse projeto é esse site que você esta agora!',
