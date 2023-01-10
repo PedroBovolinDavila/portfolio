@@ -1,4 +1,5 @@
 import { Flex, Image, Link, Text, Icon } from '@chakra-ui/react'
+import { differenceInYears } from 'date-fns'
 import { ArrowDown } from 'phosphor-react'
 
 import rocketImg from '../../assets/rocket.svg'
@@ -7,6 +8,10 @@ import { Title } from '../Title'
 import { TextHighlight } from './TextHighlight'
 
 export function Hero() {
+  const today = new Date()
+  const birthday = new Date('2007-06-16')
+  const age = differenceInYears(today, birthday)
+
   return (
     <Section
       id="home"
@@ -23,8 +28,8 @@ export function Hero() {
         </Title>
 
         <Text maxW={550} fontSize="lg" color="gray.100">
-          Me chamo <TextHighlight>Pedro</TextHighlight>, tenho 15 anos. Estudo
-          programação desde 2020 e estou a todo momento buscando me{' '}
+          Me chamo <TextHighlight>Pedro</TextHighlight>, tenho {age} anos.
+          Estudo programação desde 2020 e estou a todo momento buscando me{' '}
           <TextHighlight>aprimorar</TextHighlight> e desenvolver projetos mais{' '}
           <TextHighlight>complexos</TextHighlight>.
         </Text>
