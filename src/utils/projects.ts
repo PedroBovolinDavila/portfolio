@@ -62,6 +62,20 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/PedroBovolinDavila/portfolio',
     websiteUrl: 'https://pedrodavila.vercel.app',
   },
+  {
+    title: 'IgCall',
+    description:
+      'Site para facilitar o agendamento de reuniões ultilizando a api do Google Calendar. Sempre que você marca uma reunião no site ela automaticamente é adicionada ao Google Calendar juntamente com um link do Google Meet criado automaticamente',
+    functions: [
+      'Marcar reunião',
+      'Criar usuário',
+      'Integração com a api do Google',
+      'Calendário',
+    ],
+    techs: ['Next', 'Prisma', 'Typescript', 'Mysql', 'NextAuth', 'Google Api'],
+    githubUrl: 'https://github.com/PedroBovolinDavila/igcall',
+    websiteUrl: 'https://ig-call.vercel.app',
+  },
 ]
 
 export default projects
