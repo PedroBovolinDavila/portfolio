@@ -3,11 +3,11 @@ import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
 import { SocialMediaBox } from './components/SocialMediaBox'
 
-import { Techs } from './components/Techs'
-import { Services } from './components/Services'
-import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Projects } from './components/Projects'
+import { Services } from './components/Services'
+import { Techs } from './components/Techs'
 
 export function App() {
   return (
