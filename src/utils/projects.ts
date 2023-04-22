@@ -29,30 +29,7 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/PedroBovolinDavila/GymApp',
     websiteUrl: undefined,
   },
-  {
-    title: 'Api para comércio (em desenvolvimento)',
-    description: 'Api para gerenciamento de um comércio',
-    functions: [
-      'Autenticação',
-      'Criar produtos',
-      'Criar usuarios',
-      'Envio de images',
-      'Envio de e-mail',
-      'Recuperação de senha',
-    ],
-    techs: [
-      'Node',
-      'Typescript',
-      'Multer',
-      'Docker',
-      'Postgres',
-      'Typeorm',
-      'JWT',
-      'SOLID',
-    ],
-    githubUrl: 'https://github.com/PedroBovolinDavila/ApiComercio',
-    websiteUrl: undefined,
-  },
+
   {
     title: 'Portifólio',
     description:
@@ -75,6 +52,36 @@ const projects: Project[] = [
     techs: ['Next', 'Prisma', 'Typescript', 'Mysql', 'NextAuth', 'Google Api'],
     githubUrl: 'https://github.com/PedroBovolinDavila/igcall',
     websiteUrl: 'https://ig-call.vercel.app',
+  },
+  {
+    title: 'Api clone GymPass',
+    description:
+      'Clone das funcionalidades do aplicativo GymPass em uma Api, seguindo os principios do SOLID',
+    functions: [
+      'Autenticação JWT',
+      'Refresh Token',
+      'Cadastrar usuários e academias',
+      'Fazer check-in',
+      'Gereciamento de permissões',
+      'Testes unitarios',
+      'Testes end-to-end',
+      'Paginação de dados',
+      'GitHub Workflow',
+    ],
+    techs: [
+      'Node',
+      'Typescript',
+      'Fastify',
+      'Prisma',
+      'Docker',
+      'Vitest',
+      'Supertest',
+      'RBAC',
+      'JWT',
+      'PostgreSQL',
+    ],
+    githubUrl: 'https://github.com/PedroBovolinDavila/Solid-api',
+    websiteUrl: undefined,
   },
 ]
 
