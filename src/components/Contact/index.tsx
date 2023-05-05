@@ -34,7 +34,7 @@ export function Contact() {
 
           <Button
             as="a"
-            href="mailto:pedrodavila.bovolin@gmail.com"
+            href="mailto:pedrod.bovolin@gmail.com"
             size="md"
             colorScheme="pink"
             leftIcon={<Icon as={EnvelopeSimple} fontSize="lg" color="white" />}
@@ -50,7 +50,7 @@ export function Contact() {
         >
           <Flex
             as="form"
-            action="https://mailthis.to/pedrodavila.bovolin@gmail.com"
+            action="https://mailthis.to/pedrod.bovolin@gmail.com"
             method="POST"
             bg="gray.800"
             zIndex={1}

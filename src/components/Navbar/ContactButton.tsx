@@ -12,7 +12,7 @@ export function ContactButton({ isMobile = false }: ContactButtonProps) {
       size={isMobile ? 'md' : 'sm'}
       colorScheme="pink"
       as="a"
-      href="mailto:pedrodavila.bovolin@gmail.com"
+      href="mailto:pedrod.bovolin@gmail.com"
       bgGradient="linear(to-r, purple.500, pink.500)"
       _hover={{
         bgGradient: 'linear(to-r, purple.500, pink.500)',

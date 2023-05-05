@@ -47,7 +47,7 @@ export function SocialMediaBox() {
         />
         <SocialMediaButton
           icon={EnvelopeSimple}
-          link="mailto:pedrodavila.bovolin@gmail.com"
+          link="mailto:pedrod.bovolin@gmail.com"
         />
         <SocialMediaButton
           icon={DiscordLogo}

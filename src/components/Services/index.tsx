@@ -67,7 +67,7 @@ export function Services() {
 
           <Button
             as="a"
-            href="mailto:pedrodavila.bovolin@gmail.com"
+            href="mailto:pedrod.bovolin@gmail.com"
             size="md"
             colorScheme="pink"
             leftIcon={<Icon as={EnvelopeSimple} fontSize="lg" color="white" />}
