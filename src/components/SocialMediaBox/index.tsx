@@ -44,18 +44,22 @@ export function SocialMediaBox() {
         <SocialMediaButton
           icon={InstagramLogo}
           link="https://www.instagram.com/peeeddrroo_/"
+          label="Open my Instagram profile"
         />
         <SocialMediaButton
           icon={EnvelopeSimple}
           link="mailto:pedrod.bovolin@gmail.com"
+          label="Send me an email"
         />
         <SocialMediaButton
           icon={DiscordLogo}
           link="https://discordapp.com/users/539167776112115722"
+          label="Contact me on Discord"
         />
         <SocialMediaButton
           icon={GithubLogo}
           link="https://github.com/pedrobovolindavila"
+          label="Open my GitHub profile"
         />
       </Flex>
     </SlideFade>

@@ -36,7 +36,7 @@ export function TechDescription({
         w={['100%', 'auto']}
       >
         <IconButton
-          aria-label="Fechar descrição de liguagens"
+          aria-label="Close technology description"
           icon={<Icon as={X} fontSize="lg" />}
           variant="ghost"
           position="absolute"
@@ -68,7 +68,7 @@ export function TechDescription({
           mt="4"
         >
           <Icon as={Clock} />
-          Estudos iniciados em: {techsDescriptions[activeTech]?.startDate}
+          Studying since: {techsDescriptions[activeTech]?.startDate}
         </Text>
       </Flex>
     </Fade>

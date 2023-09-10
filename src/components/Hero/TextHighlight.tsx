@@ -11,7 +11,7 @@ export function TextHighlight({ children }: TextHighlightProps) {
       as="span"
       color="pink.500"
       fontWeight="bold"
-      bgGradient="linear(to-r, purple.400, pink.400)"
+      bgGradient="linear(to-r, purple.500, pink.400)"
       bgClip="text"
     >
       {children}

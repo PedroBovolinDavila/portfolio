@@ -1,38 +1,50 @@
 export default {
-  react: {
-    title: 'React',
-    description:
-      ' Feita para desenvolvimento de sites e criada pelo Facebook, é a tecnologia que mais ultilizo atualmente e mais estudo. Esse site que você esta vendo é feito em React.',
-    startDate: '2020',
-  },
   typescript: {
     title: 'Typescript',
     description:
-      'Minha lingugem de programação principal atualmente, o typescript pode ser considerado um "Javascript com typagem", e por ter uma boa base em Javascript aprendi o typescript muito rapidamente',
+      'TypeScript is a statically typed superset of JavaScript that enhances code quality and provides better tooling for large-scale JavaScript applications. It adds static type checking to JavaScript.',
     startDate: '2021',
   },
   next: {
-    title: 'Next',
+    title: 'Next.js',
     description:
-      'O Next é um framework feito em cima do React pela equipe da vercel, essa é a tecnologia que costumo usar em projetos grandes, por possuir algumas funções que me ajudam na hora de programar',
+      'Next.js is a React framework for building server-rendered web applications. It offers features like server-side rendering, routing, and automatic code splitting, making it easier to build fast and SEO-friendly websites.',
     startDate: '2021',
   },
   tailwind: {
-    title: 'Tailwind',
+    title: 'Tailwind CSS',
     description:
-      'O Tailwind é uma alternativa ao Css, ele é responsavel por fazer os estilos de um site/app. Uso o Tailwind pois com ele consigo ter muito mais produtividade do que com o css normal',
+      'Tailwind CSS is a utility-first CSS framework that simplifies web development by providing a set of utility classes to style HTML elements. It encourages a component-based approach to styling.',
     startDate: '2021',
   },
   node: {
-    title: 'Node',
+    title: 'Node.js',
     description:
-      'O Node é ultilizado para rodar Javascript no lado do servidor, ultilizo ele para fazer os backends dos app e sistemas mais complexos. Ele é ultilizado juntamente com um banco de dados, no meu caso o Postgres ou MongoDB',
-    startDate: '2020',
+      'Node.js is a runtime environment that allows you to run JavaScript on the server-side. It is commonly used for building backends for web applications and complex systems. Node.js is often utilized in conjunction with databases, such as Postgres or MongoDB.',
+    startDate: '2021',
+  },
+  fastify: {
+    title: 'Fastify',
+    description:
+      'Fastify is a web framework for Node.js designed to be fast and low overhead. It focuses on providing high performance for web applications and APIs.',
+    startDate: '2021',
+  },
+  nest: {
+    title: 'Nest.js',
+    description:
+      'Nest.js is a progressive Node.js framework for building scalable and maintainable server-side applications. It encourages the use of TypeScript and follows a modular and structured approach.',
+    startDate: '2022',
   },
   prisma: {
     title: 'Prisma',
     description:
-      'O Prisma é ultilizado para fazer a conexão com o banco de dados, ele possui uma forte integração com o Typescript e necessita menos configurações para começar a usar o que deixa-o mais produtivo na hora de programar',
-    startDate: '2021',
+      'Prisma is an open-source database toolkit for Node.js and TypeScript. It simplifies database access by providing a type-safe and auto-generated query builder.',
+    startDate: '2022',
+  },
+  vitest: {
+    title: 'Vitest',
+    description:
+      'Vitest is a modern JavaScript testing framework that focuses on simplicity and speed. It provides a lightweight and easy-to-use testing solution for JavaScript projects, enabling developers to write and run tests efficiently.',
+    startDate: '2022',
   },
 }

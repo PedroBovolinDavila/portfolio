@@ -1,10 +1,5 @@
 import { Button, Flex, Heading, Text, Icon } from '@chakra-ui/react'
-import {
-  AndroidLogo,
-  Database,
-  EnvelopeSimple,
-  GlobeHemisphereWest,
-} from 'phosphor-react'
+import { Database, EnvelopeSimple, GlobeHemisphereWest } from 'phosphor-react'
 import { Section } from '../Section'
 import { ServiceCard } from './ServiceCard'
 
@@ -32,21 +27,15 @@ export function Services() {
           w={['100%', '100%', 'auto']}
         >
           <ServiceCard
-            icon={AndroidLogo}
-            title="Aplicativos de celular"
-            description="Aplicativo feito em React-Native para Android e IOS"
-          />
-
-          <ServiceCard
             icon={GlobeHemisphereWest}
-            title="Sites responsivos"
-            description="Sistemas, portfolios, sites para empresa, landing pages"
+            title="Websites"
+            description="Responsive websites to boost your company."
           />
 
           <ServiceCard
             icon={Database}
-            title="Backend completo"
-            description="Backend para seus apps com tudo que você precisar"
+            title="Backend (server)"
+            description="Full backends with all available services."
           />
         </Flex>
         <Flex flexDir="column" gap="8" textAlign={['center', 'left']}>
@@ -58,10 +47,10 @@ export function Services() {
               fontSize="5xl"
               as="h2"
             >
-              Serviços
+              Services
             </Heading>
             <Text fontSize="lg" color="gray.300">
-              Serviços desponiveis para contratar
+              Check out my available services for hire.
             </Text>
           </Flex>
 
@@ -72,7 +61,7 @@ export function Services() {
             colorScheme="pink"
             leftIcon={<Icon as={EnvelopeSimple} fontSize="lg" color="white" />}
           >
-            Entre em contato
+            Contact me!
           </Button>
         </Flex>
       </Flex>

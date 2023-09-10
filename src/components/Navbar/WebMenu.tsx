@@ -12,9 +12,9 @@ export function WebMenu() {
     >
       <Link href="#home">Home</Link>
       <Link href="#techs">Techs</Link>
-      <Link href="#services">Serviços</Link>
-      <Link href="#projects">Projetos</Link>
-      <Link href="#contact">Contato</Link>
+      <Link href="#services">Services</Link>
+      <Link href="#projects">Projects</Link>
+      <Link href="#contact">Contact</Link>
 
       <Divider h="4" bg="gray.300" orientation="vertical" />
 

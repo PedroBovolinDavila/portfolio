@@ -27,9 +27,9 @@ export function MobileMenu({ isOpen, onToggle }: MobileMenuProps) {
       >
         <Link href="#home">Home</Link>
         <Link href="#techs">Techs</Link>
-        <Link href="#services">Serviços</Link>
-        <Link href="#projects">Projetos</Link>
-        <Link href="#contact">Contato</Link>
+        <Link href="#services">Services</Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#contact">Contact</Link>
 
         <Divider w="24" />
 
@@ -39,7 +39,7 @@ export function MobileMenu({ isOpen, onToggle }: MobileMenuProps) {
           display={['flex', 'flex', 'none']}
           icon={<Icon as={X} fontSize="2xl" />}
           colorScheme="pink"
-          aria-label="Abrir menu de navegação"
+          aria-label="Open navigation menu"
           onClick={onToggle}
           position="absolute"
           top="6"

@@ -9,6 +9,7 @@ export const theme = extendTheme({
     global: {
       '*': {
         boxSizing: 'border-box',
+        '-webkit-font-smoothing': 'antialiased',
       },
       body: {
         bg: 'gray.900',

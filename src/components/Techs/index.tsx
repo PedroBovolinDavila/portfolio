@@ -1,12 +1,16 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
 import { TechButton } from './TechButton'
 
-import reactLogo from '../../assets/react-logo.svg'
-import nextLogo from '../../assets/next-logo.svg'
-import nodeLogo from '../../assets/node-logo.svg'
-import prismaLogo from '../../assets/prisma-logo.svg'
-import tailwindLogo from '../../assets/tailwind-logo.svg'
+import techsDescriptions from '../../utils/techsDescriptions'
+
 import typescriptLogo from '../../assets/typescript-logo.svg'
+import nodeLogo from '../../assets/node-logo.svg'
+import fastifyLogo from '../../assets/fastify-logo.svg'
+import nestLogo from '../../assets/nest-logo.svg'
+import prismaLogo from '../../assets/prisma-logo.svg'
+import nextLogo from '../../assets/next-logo.svg'
+import tailwindLogo from '../../assets/tailwind-logo.svg'
+import vitestLogo from '../../assets/vitest-logo.svg'
 
 import { useState } from 'react'
 import { TechDescription } from './TechDescription'
@@ -14,13 +18,7 @@ import { Section } from '../Section'
 
 import bottomWave from '../../assets/bottomWave.svg'
 
-export type SelectedTech =
-  | 'react'
-  | 'typescript'
-  | 'node'
-  | 'tailwind'
-  | 'prisma'
-  | 'next'
+export type SelectedTech = keyof typeof techsDescriptions
 
 export function Techs() {
   const [seletedTech, setSelectedTech] = useState<SelectedTech | undefined>()
@@ -48,7 +46,7 @@ export function Techs() {
       >
         <Flex
           flexDir="column"
-          maxW={350}
+          maxW={400}
           gap="2"
           textAlign={['center', 'left']}
         >
@@ -59,10 +57,10 @@ export function Techs() {
             fontSize="5xl"
             as="h2"
           >
-            Tecnologias
+            Technologies
           </Heading>
           <Text fontSize="lg" color="gray.300">
-            Confira as principais tecnologias que uso em meus projetos
+            Check out the main technologies I use in my projects.
           </Text>
         </Flex>
         <Flex align="center" justify="center" maxW={550}>
@@ -74,30 +72,52 @@ export function Techs() {
               setSelectedTech={setSelectedTech}
             />
           ) : (
-            <Text color="gray.400" as="span">
-              Clique nas tecnolgias para ver detalhes
+            <Text color="gray.400" as="span" textAlign="center">
+              Click the buttons below to view details of the technologies.
             </Text>
           )}
         </Flex>
       </Flex>
-      <Flex gap="4">
+      <Flex gap="4" flexWrap="wrap" justify={'center'}>
         <TechButton
           icon={typescriptLogo}
           onClick={() => handleSelectTech('typescript')}
+          label="Open Typescript description"
         />
         <TechButton
-          icon={reactLogo}
-          onClick={() => handleSelectTech('react')}
+          icon={nodeLogo}
+          onClick={() => handleSelectTech('node')}
+          label="Open Node.js description"
         />
-        <TechButton icon={nextLogo} onClick={() => handleSelectTech('next')} />
         <TechButton
-          icon={tailwindLogo}
-          onClick={() => handleSelectTech('tailwind')}
+          icon={fastifyLogo}
+          onClick={() => handleSelectTech('fastify')}
+          label="Open Fastify description"
         />
-        <TechButton icon={nodeLogo} onClick={() => handleSelectTech('node')} />
+        <TechButton
+          icon={nestLogo}
+          onClick={() => handleSelectTech('nest')}
+          label="Open Nest.js description"
+        />
         <TechButton
           icon={prismaLogo}
           onClick={() => handleSelectTech('prisma')}
+          label="Open Prisma description"
+        />
+        <TechButton
+          icon={nextLogo}
+          onClick={() => handleSelectTech('next')}
+          label="Open Next.js description"
+        />
+        <TechButton
+          icon={tailwindLogo}
+          onClick={() => handleSelectTech('tailwind')}
+          label="Open Tailwind CSS description"
+        />
+        <TechButton
+          icon={vitestLogo}
+          onClick={() => handleSelectTech('vitest')}
+          label="Open Vitest description"
         />
       </Flex>
     </Section>

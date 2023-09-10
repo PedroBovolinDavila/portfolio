@@ -2,10 +2,11 @@ import { Button } from '@chakra-ui/react'
 
 interface TechButtonProps {
   icon: string
+  label: string
   onClick: () => void
 }
 
-export function TechButton({ icon, onClick }: TechButtonProps) {
+export function TechButton({ icon, onClick, label }: TechButtonProps) {
   return (
     <Button
       variant="unstyled"
@@ -17,6 +18,8 @@ export function TechButton({ icon, onClick }: TechButtonProps) {
       display="flex"
       alignItems="center"
       justifyContent="center"
+      aria-label={label}
+      title={label}
       _hover={{
         bg: 'pink.500',
       }}

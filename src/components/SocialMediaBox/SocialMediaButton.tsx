@@ -7,9 +7,14 @@ interface SocialMediaButtonProps {
     IconProps & React.RefAttributes<SVGSVGElement>
   >
   link: string
+  label: string
 }
 
-export function SocialMediaButton({ icon, link }: SocialMediaButtonProps) {
+export function SocialMediaButton({
+  icon,
+  link,
+  label,
+}: SocialMediaButtonProps) {
   return (
     <IconButton
       icon={<Icon as={icon} color="white" fontSize="2xl" />}
@@ -17,7 +22,8 @@ export function SocialMediaButton({ icon, link }: SocialMediaButtonProps) {
       href={link}
       target="_blank"
       colorScheme="pink"
-      aria-label="Abrir rede social"
+      aria-label={label}
+      title={label}
       variant="unstyled"
       display="flex"
       alignItems="center"

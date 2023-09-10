@@ -31,16 +31,6 @@ export function Contact() {
               botão abaixo
             </Text>
           </Flex>
-
-          <Button
-            as="a"
-            href="mailto:pedrod.bovolin@gmail.com"
-            size="md"
-            colorScheme="pink"
-            leftIcon={<Icon as={EnvelopeSimple} fontSize="lg" color="white" />}
-          >
-            Entre em contato
-          </Button>
         </Flex>
         <Flex
           flexDir={['column', 'column', 'row']}
@@ -48,10 +38,10 @@ export function Contact() {
           w={['100%', '100%', 500, 600]}
           boxShadow="base"
         >
-          <Flex
-            as="form"
-            action="https://mailthis.to/pedrod.bovolin@gmail.com"
-            method="POST"
+          <Button
+            as="a"
+            href="mailto:pedrod.bovolin@gmail.com"
+            size="md"
             bg="gray.800"
             zIndex={1}
             flexDir="column"
@@ -59,37 +49,11 @@ export function Contact() {
             p="8"
             borderRadius="md"
             gap="4"
+            colorScheme="pink"
+            leftIcon={<Icon as={EnvelopeSimple} fontSize="lg" color="white" />}
           >
-            <ContactInput name="name" placeholder="Informe seu nome" />
-            <ContactInput
-              type="email"
-              name="email"
-              placeholder="Informe seu Email"
-            />
-
-            <Textarea
-              variant="outline"
-              size="lg"
-              borderColor="pink.500"
-              bg="gray.800"
-              _hover={{
-                bg: 'gray.800',
-              }}
-              focusBorderColor="pink.500"
-              name="message"
-              placeholder="Sua mensagem/proposta"
-              height="90px"
-              required
-            />
-
-            <Button
-              type="submit"
-              colorScheme="pink"
-              leftIcon={<Icon as={PaperPlaneRight} fontSize="lg" />}
-            >
-              Enviar
-            </Button>
-          </Flex>
+            Entre em contato comigo pelo meu email: pedrod.bovolin@gmail.com
+          </Button>
         </Flex>
       </Flex>
     </Section>
