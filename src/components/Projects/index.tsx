@@ -42,12 +42,11 @@ export function Projects() {
               fontSize="5xl"
               as="h2"
             >
-              Projetos
+              Projects
             </Heading>
             <Text fontSize="lg" color="gray.300">
-              Veja meus principais projetos, ou clique no botão abaixo para
-              visualizar todos os projetos no{' '}
-              <TextHighlight>GitHub</TextHighlight>
+              Check out my main projects, or click the button below to view all
+              projects on <TextHighlight>Github</TextHighlight>
             </Text>
           </Flex>
 
@@ -60,7 +59,7 @@ export function Projects() {
               }
               onClick={handleChangeProject}
             >
-              Avançar projetos
+              Next project
             </Button>
 
             <Button
@@ -71,7 +70,7 @@ export function Projects() {
               colorScheme="pink"
               leftIcon={<Icon as={GithubLogo} fontSize="lg" color="white" />}
             >
-              Ver todos os projetos
+              View all projects
             </Button>
           </Flex>
         </Flex>

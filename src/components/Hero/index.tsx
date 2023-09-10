@@ -23,15 +23,13 @@ export function Hero() {
       noSpacing
     >
       <Flex flexDir="column" gap="8" textAlign={['center', 'center', 'start']}>
-        <Title fontSize={['3xl', '4xl', '4xl', '5xl']}>
-          Olá, seja bem-vindo
-        </Title>
+        <Title fontSize={['3xl', '4xl', '4xl', '5xl']}>Hello, welcome!</Title>
 
         <Text maxW={550} fontSize="lg" color="gray.100">
-          Me chamo <TextHighlight>Pedro</TextHighlight>, tenho {age} anos.
-          Estudo programação desde 2020 e estou a todo momento buscando me{' '}
-          <TextHighlight>aprimorar</TextHighlight> e desenvolver projetos mais{' '}
-          <TextHighlight>complexos</TextHighlight>.
+          My name is <TextHighlight>Pedro</TextHighlight>, I'm {age} year old.
+          I've been studying programming since 2020, and I'm constantly striving
+          to <TextHighlight>improve myself</TextHighlight> and develop more{' '}
+          <TextHighlight>complex projects</TextHighlight>.
         </Text>
 
         <Link
@@ -43,7 +41,7 @@ export function Hero() {
           href="#techs"
         >
           <Icon as={ArrowDown} />
-          desça para ver meus projetos
+          Scroll down to see my projects
         </Link>
       </Flex>
 

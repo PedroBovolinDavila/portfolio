@@ -11,7 +11,7 @@ interface ServiceCardProps {
 export function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
     <Flex
-      maxW={['100%', '100%', 230]}
+      w={['100%', '100%', 230]}
       h={250}
       bgGradient="linear(to-r, blue.500, purple.500, pink.500)"
       p="6"

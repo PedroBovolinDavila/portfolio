@@ -18,7 +18,7 @@ export function ContactButton({ isMobile = false }: ContactButtonProps) {
         bgGradient: 'linear(to-r, purple.500, pink.500)',
       }}
     >
-      Entre em contato!
+      Contact me!
     </Button>
   )
 }
